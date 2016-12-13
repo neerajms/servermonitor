@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_status"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.neerajms99b.neeraj.servermonitor.StatusActivityFragment">
+
+    <TextView
+        android:id="@+id/uptime_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#00e676"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Uptime"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/uptime_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/uptime_label"
+        android:background="#00e676"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textSize="36sp" />
+
+</RelativeLayout>
