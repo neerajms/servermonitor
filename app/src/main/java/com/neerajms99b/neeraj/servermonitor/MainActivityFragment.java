@@ -75,18 +75,13 @@ public class MainActivityFragment extends Fragment {
 
             session.connect();
 
-
             ChannelExec channelExec = getExecutionChannel(session, "uptime");
             channelExec.connect();
-//            channelExec.disconnect();
-
-//            channelExec = getExecutionChannel(session, "");
 
             InputStream inputStream = channelExec.getInputStream();
             String outputBuffer = receiveResponse(inputStream);
             Log.d(TAG, outputBuffer);
             callBack.showStatus(outputBuffer);
-//            channelExec.disconnect();
             session.disconnect();
         } catch (JSchException e) {
 //            Toast.makeText(callBack,
