@@ -15,6 +15,7 @@
         android:gravity="center"
         android:padding="8dp"
         android:text="Uptime"
+        android:textColor="#ffffff"
         android:textSize="18sp" />
 
     <TextView
@@ -25,6 +26,53 @@
         android:background="#00e676"
         android:gravity="center"
         android:padding="8dp"
+        android:textColor="#ffffff"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/load_average_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/uptime_textview"
+        android:background="#ff9100"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Load average"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/load_average_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/load_average_label"
+        android:background="#ff9100"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textColor="#ffffff"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/users_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/load_average_textview"
+        android:background="#00e676"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Users"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/users_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/users_label"
+        android:background="#00e676"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textColor="#ffffff"
         android:textSize="36sp" />
 
 </RelativeLayout>
